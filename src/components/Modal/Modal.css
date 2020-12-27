@@ -10,15 +10,42 @@
   top: 30%;
   left: 25%;
   width: 50%;
-  transition: all 0.3s ease-out;
 }
 
 .ModalOpen {
-  opacity: 1;
-  transform: translateY(0);
+  animation: openModal 0.4s ease-out forwards;
 }
 
 .ModalClosed {
-  opacity: 0;
-  transform: translateY(-100%);
+  animation: claseModal 0.4s ease-in forwards;
+}
+
+@keyframes openModal {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes claseModal {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 }
