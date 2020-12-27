@@ -17,7 +17,7 @@
 }
 
 .ModalClosed {
-  animation: claseModal 0.4s ease-in forwards;
+  animation: claseModal 1s ease-in forwards;
 }
 
 @keyframes openModal {

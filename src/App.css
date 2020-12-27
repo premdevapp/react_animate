@@ -11,3 +11,16 @@
 .Button:active {
   background-color: #fa923f;
 }
+
+.fade-slide-enter {
+  opacity: 0.5;
+}
+.fade-slide-enter-active {
+  opacity: 1;
+}
+.fade-slide-exit {
+  opacity: 0.5;
+}
+.fade-slide-exit-active {
+  opacity: 0;
+}
